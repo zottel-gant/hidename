@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "nametag_toggle",
+  "version": "1.0.0",
+  "name": "Nametag Toggle",
+  "description": "Schaltet Spielernamen über den Köpfen per Tastendruck [B] an oder aus.",
+  "authors": [
+    "zottel"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.example.nametag.NametagToggleMod"
+    ]
+  },
+  "mixins": [
+    "nametag_toggle.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.26.3",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
